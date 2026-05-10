@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: springex-deployment
+  labels:
+    app: springex
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: springex
+  template:
+    metadata:
+      labels:
+        app: springex
+    spec:
+      containers:
+        - name: springex
+          image: 516606118353.dkr.ecr.us-east-2.amazonaws.com/springex:latest1
+          ports:
+            - containerPort: 8080
+
+
+
+

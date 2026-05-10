@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springex-service
+  labels:
+    app: springex
+spec:
+  type: LoadBalancer
+  selector:
+    app: springex
+  ports:
+    - port: 80          # Port exposed outside the cluster
+      targetPort: 8080    # Port on the container
