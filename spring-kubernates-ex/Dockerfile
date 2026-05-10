@@ -1,5 +1,5 @@
 # Use an official OpenJDK image as the base image
-FROM amazoncorretto:17-alpine-jdk
+FROM amazoncorretto:21-alpine-jdk
 
 # Set the working directory inside the container
 WORKDIR /app
