@@ -11,4 +11,4 @@ COPY build/libs/demo-0.0.1-SNAPSHOT.jar springex.jar
 EXPOSE 8080
 
 # Command to run the JAR file
-ENTRYPOINT ["java", "-jar", "springex.jar"]
+CMD ["java", "-jar", "springex.jar"]
