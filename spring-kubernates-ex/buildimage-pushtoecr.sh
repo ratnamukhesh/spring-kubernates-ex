@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-aws version
+#aws version
 IMAGE_NAME="springboot-eks"
 
 
